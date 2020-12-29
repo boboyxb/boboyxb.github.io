@@ -1,7 +1,0 @@
-<div class="new-in-1">
-                <center>
-                    <a href="[field:arcurl/]">[field:title /]</a></center>
-                <img src="[field:litpic /]" width="195" height="120" alt="[field:fulltitle /]" />
-                <p>[field:description function="cn_substr(@me,300)"/]...
-                    <a href="[field:arcurl/]">[查看详情]</a></p>
-            </div>

@@ -1,1 +1,0 @@
-<a href="[field:typeurl/]"><em>查看</em>更多></a>
