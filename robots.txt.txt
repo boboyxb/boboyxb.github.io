@@ -1,0 +1,4 @@
+# robots.txt
+# 嘻嘻嘻 this is my home page by yxb
+Crawl-delay: 10
+Disallow: /bin/
