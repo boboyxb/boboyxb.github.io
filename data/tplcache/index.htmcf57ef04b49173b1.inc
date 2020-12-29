@@ -1,0 +1,46 @@
+<?php
+$z[0]=Array("global","",121,147);
+$z[0][4]=array();
+$z[0][4]['name']="cfg_webname";
+$z[1]=Array("field","",191,240);
+$z[1][4]=array();
+$z[1][4]['name']="description";
+$z[1][4]['function']="html2text(@me)";
+$z[2]=Array("field","",276,298);
+$z[2][4]=array();
+$z[2][4]['name']="keywords";
+$z[3]=Array("include","",1819,1854);
+$z[3][4]=array();
+$z[3][4]['filename']="head.htm";
+$z[4]=Array("arclist","\r\n                                <li><a href=\"[field:arcurl/]\"><img src=\"[field:litpic function=firstimg('@me')/]\" /></a></li>\r\n                                ",2301,2522);
+$z[4][4]=array();
+$z[4][4]['flag']="f";
+$z[4][4]['titlelen']="40";
+$z[4][4]['row']="3";
+$z[5]=Array("arclist","\r\n                            <div class=\"hots-item\">\r\n                                <a href=\"[field:arcurl/]\">\r\n                                    <div class=\"hots-image\" style=\"background-image:url([field:litpic function=firstimg('@me')/])\"></div>\r\n                                    <h3>\r\n                                        <i class=\"fa fa-chevron-right\"></i>\r\n                                        <span>[field:title/]</span>\r\n                                    </h3>\r\n                                </a>\r\n                            </div>\r\n                            ",2987,3638);
+$z[5][4]=array();
+$z[5][4]['flag']="h";
+$z[5][4]['titlelen']="40";
+$z[5][4]['limit']="0,1";
+$z[6]=Array("arclist","\r\n                            <div class=\"hots-title\">\r\n                                <i class=\"fa fa-chevron-right\"></i>\r\n                                <a href=\"[field:arcurl/]\">[field:title/]</a>\r\n                            </div>\r\n                            ",3668,4006);
+$z[6][4]=array();
+$z[6][4]['orderby']="click";
+$z[6][4]['titlelen']="40";
+$z[6][4]['limit']="1,2";
+$z[7]=Array("arclist","\r\n                            <div class=\"image\">\r\n                                <div class=\"index-cat-box\" style=\"background-image:url([field:litpic function=firstimg('@me')/])\">\r\n                                    <a class=\"istop\" href=\"[field:arcurl/]\">\r\n                                        <div class=\"overlay\"></div>\r\n                                        <div class=\"title\">\r\n                                            <span>[field:typename/]</span>\r\n                                            <h3>[field:title/]</h3>\r\n                                        </div>\r\n                                    </a>\r\n                                </div>\r\n                            </div>\r\n                            ",4361,5158);
+$z[7][4]=array();
+$z[7][4]['orderby']="click";
+$z[7][4]['titlelen']="40";
+$z[7][4]['row']="3";
+$z[8]=Array("arclist","\r\n                            <div class=\"ajax-load-con content excerpt-one\">\r\n                                <div class=\"content-box posts-image-box\">\r\n                                    <div class=\"posts-default-title\">\r\n                                        <div class=\"post-entry-categories\">\r\n                                            [field:id function=GetMyTags(@me,5)/]\r\n                                        </div>\r\n                                        <h2><a href=\"[field:arcurl/]\" title=\"[field:fulltitle/]\">[field:title/]</a></h2>\r\n                                    </div>\r\n                                    <p class=\"focus\">\r\n                                        <a href=\"[field:arcurl/]\" class=\"thumbnail\">\r\n                                            [field:array runphp='yes']@me = (strpos(@me['litpic'],'defaultpic') ? \"\" : \"<span class='item'><span class='thumb-span'><img src='{@me['litpic']}' class='thumb'></span></span>\"); [/field:array]\r\n                                        </a>\r\n                                    </p>\r\n                                    <div class=\"posts-default-content\">\r\n                                        <div class=\"posts-text\">[field:description function=\"cn_substr(@me,300)\"/]...</div>\r\n                                        <div class=\"posts-default-info\">\r\n                                            <ul>\r\n                                                <li class=\"post-author\">\r\n                                                    <i class=\"fa fa-user\"></i><a>[field:writer /]</a>\r\n                                                </li>\r\n                                                <li class=\"ico-cat\">\r\n                                                    <i class=\"fa fa-list-ul\"></i>\r\n                                                    <a href=\"[field:typeurl /]\">[field:typename /]</a>\r\n                                                </li>\r\n                                                <li class=\"ico-time\">\r\n                                                    <i class=\"fa fa-clock-o\"></i>[field:pubdate function=\"MyDate('Y-m-d',@me)\"/]\r\n                                                </li>\r\n                                                <li class=\"ico-like\">\r\n                                                    <i class=\"fa fa-eye\"></i>[field:click /]\r\n                                                </li>\r\n                                            </ul>\r\n                                        </div>\r\n                                    </div>\r\n                                </div>\r\n                            </div>\r\n                            ",5564,8273);
+$z[8][4]=array();
+$z[8][4]['titlelen']="100";
+$z[8][4]['row']="10";
+$z[9]=Array("include","",8409,8447);
+$z[9][4]=array();
+$z[9][4]['filename']="sidebar.htm";
+$z[10]=Array("include","",8559,8594);
+$z[10][4]=array();
+$z[10][4]['filename']="foot.htm";
+
+?>

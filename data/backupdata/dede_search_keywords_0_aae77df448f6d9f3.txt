@@ -1,0 +1,1 @@
+INSERT INTO `dede_search_keywords` VALUES('1','景点','景点','3','3','1559983633','0','0');

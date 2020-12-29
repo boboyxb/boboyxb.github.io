@@ -1,0 +1,1 @@
+<li><a href="[field:arcurl/]"><img src="[field:litpic function=firstimg('@me')/]" /></a></li>

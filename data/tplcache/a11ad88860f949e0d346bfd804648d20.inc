@@ -1,0 +1,1 @@
+<li><a class="cor_blue" href="[field:arcurl/]">[field:title/]</a></li>

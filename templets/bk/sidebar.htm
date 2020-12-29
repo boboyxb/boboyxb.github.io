@@ -1,0 +1,99 @@
+<div class="sidebar col-xs-12 col-sm-4 col-md-4">
+    <div class="widget widget_suxingme_postlist">
+        <h3><span>随便看看</span></h3>
+        <ul class="recent-posts-widget">
+            {dede:arclist orderby='rand' titlelen='40' row='1'}
+            <li class="one">
+                <a href="[field:arcurl/]" title="[field:fulltitle/]">
+                    <div class="overlay"></div>
+                    <img class="thumbnail" src="[field:litpic function=firstimg('@me')/]" alt="[field:fulltitle/]" />
+                    <div class="title">
+                        <span>[field:pubdate function="MyDate('Y-m-d',@me)"/]</span>
+                        <h4>[field:title/]</h4>
+                    </div>
+                </a>
+            </li>
+            {/dede:arclist}
+            {dede:arclist orderby='rand' titlelen='40' row='3'}
+            <li class="others">
+                <div class="image">
+                    <a href="[field:arcurl/]" title="[field:fulltitle/]">
+                        <img src="[field:litpic function=firstimg('@me')/]" alt="[field:fulltitle/]" class="thumbnail" /></a>
+                </div>
+                <div class="title">
+                    <h4><a href="[field:arcurl/]" title="[field:fulltitle/]">[field:title/]</a></h4>
+                    <span>[field:pubdate function="MyDate('Y-m-d',@me)"/]</span>
+                </div>
+            </li>
+            {/dede:arclist}
+        </ul>
+    </div>
+    <div class="widget widget_suxingme_hotpost">
+        <h3><span>热门文章</span></h3>
+        <ul class="widget_suxingme_post">
+            {dede:arclist orderby='click' titlelen='40' row='3'}
+            <li>
+                <a href="[field:arcurl/]" title="[field:fulltitle/]">
+                    <div class="overlay"></div>
+                    <img class="thumbnail" src="[field:litpic function=firstimg('@me')/]" alt="[field:fulltitle/]" />
+                    <div class="title">
+                        <div class="entry-meta">
+                            <span>[field:pubdate function="MyDate('Y-m-d',@me)"/]</span>
+                        </div>
+                        <h4>[field:title/]</h4>
+                    </div>
+                </a>
+            </li>
+            {/dede:arclist}
+        </ul>
+    </div>
+    <div class="widget suxingme_tag">
+        <h3>
+            <span>热门标签</span></h3>
+        <div class="widge_tags">
+            <div class="tag-items">
+                {dede:tag row='30' sort='hot' getall='1'}
+                <a href="[field:link/]">[field:tag /]</a>
+                {/dede:tag}
+            </div>
+        </div>
+    </div>
+    <div class="widget suxingme_social">
+        <h3>
+            <span>关注我们 么么哒！</span></h3>
+        <div class="attentionus">
+            <ul class="items clearfix">
+                <span class="social-widget-link social-link-weibo">
+                    <span class="social-widget-link-count">
+                        <i class="fa fa-weibo"></i>自媒体新浪微博</span>
+                    <span class="social-widget-link-title">新浪微博</span>
+                    <a href="http://weibo.com/" target="_blank" rel="nofollow"></a>
+                </span>
+                <span class="social-widget-link social-link-tencent-weibo">
+                    <span class="social-widget-link-count">
+                        <i class="fa fa-tencent-weibo"></i>自媒体腾讯微博</span>
+                    <span class="social-widget-link-title">腾讯微博</span>
+                    <a href="http://t.qq.com/" target="_blank" rel="nofollow"></a>
+                </span>
+                <span class="social-widget-link social-link-qq">
+                    <span class="social-widget-link-count">
+                        <i class="fa fa-qq"></i>1234567890</span>
+                    <span class="social-widget-link-title">QQ号</span>
+                    <a href="http://wpa.qq.com/msgrd?v=3&uin={dede:global.cfg_qq/}&site=qq&menu=yes" rel="nofollow"></a>
+                </span>
+                <span class="social-widget-link social-link-email">
+                    <span class="social-widget-link-count">
+                        <i class="fa fa-envelope"></i>admin@youweb.com</span>
+                    <span class="social-widget-link-title">邮箱</span>
+                    <a href="http://mail.qq.com/cgi-bin/qm_share?t=qm_mailme&email=admin@youweb.com" target="_blank" rel="nofollow"></a>
+                </span>
+                <span class="social-widget-link social-link-wechat">
+                    <span class="social-widget-link-count">
+                        <i class="fa fa-weixin"></i>某某博客</span>
+                    <span class="social-widget-link-title">微信公众号</span>
+                    <a id="tooltip-s-weixin" href="javascript:void(0);"></a>
+                </span>
+            </ul>
+        </div>
+    </div>
+</div>
